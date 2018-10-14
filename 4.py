@@ -1,15 +1,17 @@
 largest=0
+def Reverse(num):
+    num=str(num)
+    new_num=""
+    for i in range(1,(len(num)+1)):
+        var=int("-"+str(i))
+        new_num=new_num+num[var]
+    return str(new_num)
 def PalindromeTest(num):
     num=str(num)
-    prev_char=num[1]
-    for char in num:
-        if char==prev_char:
-            pass
-        else:
-            return False
-            break
-        prev_char=char
-    return True
+    if Reverse(num)==num:
+        return True
+    else:
+        return False
 numbers=range(100,1000)
 for i in numbers:
     for x in numbers:
