@@ -1,5 +1,4 @@
 from math import sqrt
-from time import sleep
 x=5000
 while True:
     for a in range(1,x):
