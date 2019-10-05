@@ -3,7 +3,6 @@ def DivsiableCheck(num):
     for i in range(1,21):
         if num%i!=0:
             return False
-            break
     return True
 while DivsiableCheck(i)!=True:
     i+=1
